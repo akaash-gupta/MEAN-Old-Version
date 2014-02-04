@@ -1,0 +1,40 @@
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+  meta(name='viewport', content='width=device-width,initial-scale=1')
+
+  title= appName
+  meta(http-equiv='Content-type', content='text/html;charset=UTF-8')
+  meta(name="keywords", content="node.js, express, mongoose, mongodb, angularjs")
+  meta(name="description", content="Autodesk ACE Component Online Development.")
+
+  link(href='/img/icons/favicon.ico', rel='shortcut icon', type='image/x-icon')
+  
+  meta(property='fb:app_id', content='APP_ID')
+  meta(property='og:title', content='#{appName}')
+  meta(property='og:description', content='Autodesk ACE Component Online Development')
+  meta(property='og:type', content='website')
+  meta(property='og:url', content='APP_URL')
+  meta(property='og:image', content='APP_LOGO')
+  meta(property='og:site_name', content='Autodesk Com. On. Development')
+  meta(property='fb:admins', content='APP_ADMIN')
+
+  link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.min.css')
+  //- link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap-responsive.css')
+  link(rel='stylesheet', href='/css/common.css')
+
+  //if lt IE 9
+    script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+
+  script.
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-47561772-2']);
+    _gaq.push(['_setDomainName', 'none']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
